@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Variable Example</title>
+    <style>
+      /* Define variables at root level */
+      :root {
+        --bg-color: #f0f8ff;
+        --text-color: #333333;
+      }
+
+      /* Using variables */
+      .box-using-variable {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #ccc;
+      }
+
+      /* Using direct values */
+      .box-using-direct {
+        background-color: #f0f8ff;
+        color: #333333;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-using-variable">
+      ✅ This box is using CSS <strong>variables</strong>.
+    </div>
+
+    <div class="box-using-direct">
+      ✅ This box is using <strong>direct values</strong>.
+    </div>
+  </body>
+</html>
+``
